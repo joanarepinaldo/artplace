@@ -15,7 +15,6 @@ server.get('/lojas', pages.lojas)
 server.get('/localizacao', pages.localizacao)
 server.get('/create-loja', pages.createLoja)
 server.post('/save-loja', pages.saveLoja)
-server.listen(port,)
 
 const jsonServer = require('json-server');
 
