@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Art Place Localização</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+
+         <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+ integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+ crossorigin=""></script>
+
+        <link rel="icon" href="/images/logo-icon.png">
+        <link rel="stylesheet" href="/CSS/main.css">
+        <link rel="stylesheet" href="/CSS/animations.css">
+        <link rel="stylesheet" href="/CSS/page-localizacao.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,800&display=swap" rel="stylesheet">
+    </head>
+    <body id ="body">
+         
+      <div id="page-localizacao">
+          <aside class="animate-right">
+              <header>
+                  <img src="/images/logo.png" alt="ArtPlace">
+                  <h2>Escolha uma loja artesanal no mapa</h2>
+                  <p>Produtos feitos com amor! <3</p>
+
+              </header>
+              <footer>
+                  <strong>Londrina</strong>
+                  <p>Paraná</p>
+              </footer>
+          </aside>
+          
+
+          <div id="mapid" class="animate-appear">
+            <div class="localizacao">
+                {{#each localizacao}}
+                <span hidden
+                    data-id="{{this.id}}"
+                    data-name="{{this.name}}"
+                    data-lat="{{this.lat}}"
+                    data-lng="{{this.lng}}"
+                ></span>
+
+                {{/each}}
+              </div>
+              <a href="/create-loja" class="create-loja" title="Cadastre uma loja">
+                  <img src="/images/plus.svg" alt="Criar loja">
+              </a>
+                
+          </div>
+      </div>
+      <script src="/scripts/page-localizacao.js">
+
+      </script>
+    </body>
+
+</html>

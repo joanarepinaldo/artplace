@@ -1,0 +1,107 @@
+
+
+#page-landing{
+    background: linear-gradient(329.54deg, #cf75bf  0%, #c6eedf 100%) ;
+    text-align: center;
+    min-height: 100vh;
+
+    display: flex;
+    
+}
+#container{
+    margin: auto;
+    width: min(90%, 112rem);
+
+}
+
+.location, h1, .visit p {
+    height: 16vh;
+
+}
+.visit a {
+    animation-delay: 250ms;
+    width: 8rem;
+    height: 8rem;
+    border:none;
+    border-radius: 3rem;
+    background: rgb(219, 95, 137);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+    transition: 0.2s;
+
+}
+.visit a:hover {
+    background: rgb(255, 0, 85);
+    
+}
+#logo{
+    animation-delay: 50ms;
+}
+
+.location{
+    animation-delay: 100ms;
+}
+
+h1{
+    animation-delay: 150ms;
+    font-size: clamp(4rem, 7vw, 7rem);
+    font-style: oblique;
+    padding-bottom: 100px;
+}
+
+.visit p{
+    animation-delay: 200ms;
+}
+
+
+/*desktop version*/
+
+@media(min-width: 760px){
+    #container{
+        padding: 6rem 3rem;
+        background: url("../images/artinitial.png") no-repeat 90% / clamp(30rem, 54vw, 56rem);
+        
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .location, h1,.visit p {
+        height: initial;
+        text-align: initial;
+
+    }
+    .location{
+        text-align: right;
+        font-size: 2.4rem;
+        line-height: 1.5;
+    }
+    h1{
+        font-style: oblique;
+        width: min(500px, 80%);
+        line-height: .88;
+        padding-bottom: 20px;
+        margin: clamp(1%, 9vh, 12%) 0 1px;
+    }
+    .visit{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .visit p{
+        line-height: 1.5;
+        width: clamp(20rem, 30vw, 50rem);
+        font-size: 2.4rem;
+    }
+    .visit a{
+        margin: initial;
+    }
+
+
+
+}
