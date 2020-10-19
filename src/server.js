@@ -16,17 +16,9 @@ server.get('/localizacao', pages.localizacao)
 server.get('/create-loja', pages.createLoja)
 server.post('/save-loja', pages.saveLoja)
 
-const jsonServer = require('json-server');
-
-const server = jsonServer.create();
-const router = jsonServer.router('db.json');
-const middlewares = jsonServer.defaults();
-
-const port = process.env.PORT || 5500;
-
-server.use(middlewares);
-server.use(router);
-server.listen(port, () => {
-  // eslint-disable-next-line no-console
-  console.log(`JSON Server is running in ${port}`);
-});
+var express = require('express');
+var app = express();
+var fs = require('fs');
+app.use(express.static(__dirname + '/public'));
+app.listen(process.env.PORT || 4000);
+module.exports = {app}
