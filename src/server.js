@@ -15,10 +15,4 @@ server.get('/lojas', pages.lojas)
 server.get('/localizacao', pages.localizacao)
 server.get('/create-loja', pages.createLoja)
 server.post('/save-loja', pages.saveLoja)
-
-var express = require('express');
-var app = express();
-var fs = require('fs');
-app.use(express.static(__dirname + '/public'));
-app.listen(process.env.PORT || 4000);
-module.exports = {app}
+server.listen(5500)
