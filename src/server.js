@@ -1,4 +1,4 @@
-const express = require('express');
+/* const express = require('express');
 const path = require('path');
 const pages = require('./pages.js');
 
@@ -15,4 +15,4 @@ server.get('/lojas', pages.lojas)
 server.get('/localizacao', pages.localizacao)
 server.get('/create-loja', pages.createLoja)
 server.post('/save-loja', pages.saveLoja)
-server.listen(5500)
+server.listen(5500) */
