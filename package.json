@@ -2,9 +2,7 @@
   "name": "y",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,7 +16,9 @@
     "sqlite-async": "^1.1.0",
     "sqlite3": "^5.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@vercel/node": "^1.11.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joanarepinaldo/artplace.git"
