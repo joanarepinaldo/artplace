@@ -1,7 +1,6 @@
 {
-  "name": "artplace",
+  "name": "y",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon src/server.js"
@@ -14,6 +13,17 @@
     "express-handlebars": "^5.1.0",
     "hbs": "^4.1.1",
     "nodemon": "^2.0.5",
-    "sqlite-async": "^1.1.0"
-  }
+    "sqlite-async": "^1.1.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joanarepinaldo/artplace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joanarepinaldo/artplace/issues"
+  },
+  "homepage": "https://github.com/joanarepinaldo/artplace#readme",
+  "description": ""
 }

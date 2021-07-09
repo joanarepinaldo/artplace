@@ -15,5 +15,6 @@ server.get('/lojas', pages.lojas)
 server.get('/localizacao', pages.localizacao)
 server.get('/create-loja', pages.createLoja)
 server.post('/save-loja', pages.saveLoja)
-var porta = process.env.PORT || 8080;
-app.listen(porta);
+server.listen(5500)
+// var porta = process.env.PORT || 8080;
+// app.listen(porta);
