@@ -11,9 +11,9 @@ class Tabelas{
 
         this.conexao.query(sql, erro =>{
             if(erro){
-                console.log(erro)
+               
             }else{
-                console.log("Criou tabela")
+                //console.log("Criou tabela")
             }
         })
     }

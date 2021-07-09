@@ -4,7 +4,7 @@ function localizaLoja(id,db,res) {
 
     const localizacao = db.query('SELECT * FROM lojas WHERE id = ?', [parseInt (id)], (erro, localizacao ) =>{
         if(erro){
-            console.log(erro)
+            
         }else{
            
             const lojas = localizacao[0];

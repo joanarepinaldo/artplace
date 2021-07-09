@@ -25,7 +25,7 @@ module.exports = {
             
 
         } catch (error) {
-            console.log(error);
+            
             return res.send('Erro banco dados1');
         }
         
@@ -40,7 +40,7 @@ module.exports = {
             
 
         } catch(error){
-            console.log(error);
+           
             return res.send('Erro banco dados2');
 
         }
@@ -76,7 +76,7 @@ module.exports = {
             return res.redirect('/localizacao')
 
         } catch (error) {
-            console.log(error)
+            
             return res.send('Erro banco de dados 3')
         }
         

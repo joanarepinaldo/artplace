@@ -6,7 +6,7 @@ function localLojas(db,res) {
     
     const localizacao = db.query('SELECT * FROM lojas', (erro, localizacao ) =>{
         if(erro){
-            console.log(erro)
+            
         }else{
             //console.log('Consulta',resultados)
             res.render('localizacao',{localizacao })
