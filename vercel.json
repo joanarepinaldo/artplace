@@ -18,7 +18,7 @@
         },
         {
             "src":  "/",
-            "dest": "src/views/index.html"
+            "dest": "src/views/index.hbs"
         }
     ]
 }
