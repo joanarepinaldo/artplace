@@ -26,6 +26,6 @@ conexao.connect((erro) =>{
     }else{
         Tabelas.init(conexao);
         const port = process.env.PORT || 3000;
-        app.listen(port, () => console.log(`Server running on ${port}, http://localhost:${port}`));
+        server.listen(port, () => console.log(`Server running on ${port}, http://localhost:${port}`));
     }
 })
