@@ -1,9 +1,8 @@
 {
   "name": "y",
   "version": "1.0.0",
-  "main":  "server.js"
+  "main":  "server.js",
   
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
