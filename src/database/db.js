@@ -9,7 +9,7 @@ async function connect(){
     return connection;
 }
 
-const Database = require('sqlite-async');
+const Database = require("mysql2/promise");
 
 function execute(db){
     return db.exec(`
