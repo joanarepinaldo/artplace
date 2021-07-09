@@ -4,8 +4,25 @@
         {
             "src": "src/server.js",
             "use": "@vercel/node"
+        },
+        {
+            "src": "src/pages.js",
+            "use": "@vercel/node"
         }
         
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "src/server.js"
+        },
+        {
+          "src":  "/(.*)",
+          "dest": "public/scripts/index.js"
+        },
+        {
+            "src":  "/",
+            "dest": "src/views/index.hbs"
+        }
     ]
-   
 }
