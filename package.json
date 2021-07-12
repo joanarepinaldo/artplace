@@ -2,6 +2,7 @@
   "name": "y",
   "version": "1.0.0",
   "main": "server.js",
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -13,8 +14,7 @@
     "mysql": "^2.18.1",
     "mysql2-promise": "^0.1.4",
     "nodemon": "^2.0.5",
-    "sqlite-async": "^1.1.0",
-    "sqlite3": "^5.0.2"
+    
   },
   "devDependencies": {
     "@vercel/node": "^1.11.1"
