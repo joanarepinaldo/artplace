@@ -3,7 +3,7 @@ const saveLoja = require('./database/saveLoja');
 const localLojas = require('./database/localizacao');
 const localizaLoja = require('./database/localizaLoja');
 const conexao = require("./database/db");
-
+const pool = require("./database/db");
 
 module.exports = {
 
@@ -19,7 +19,7 @@ module.exports = {
               
         try {
             
-            const db = conexao;
+            const db = pool;
             localizaLoja(id,db,res)
 
             
@@ -34,7 +34,7 @@ module.exports = {
     async localizacao(req,res){
         try{
             
-            const db = conexao;
+            const db = pool;
             localLojas(db,res)
             
             
@@ -59,7 +59,7 @@ module.exports = {
         }
 
         try {
-            const db = conexao;
+            const db = pool;
             await saveLoja(db, {
                 lat:fields.lat,
                 lng:fields.lng,

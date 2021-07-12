@@ -12,6 +12,7 @@ app.use(express.static('public'));
 app.set ('views', path.join(__dirname, "views"))
 app.set('view engine', 'hbs')
 
+
 app.get('/', pages.index)
 app.get('/lojas', pages.lojas)
 app.get('/localizacao', pages.localizacao)
