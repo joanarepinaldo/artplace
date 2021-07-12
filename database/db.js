@@ -14,13 +14,20 @@
 
 const mysql = require('mysql');
 
+
 const conexao = mysql.createConnection({
     host: 'us-cdbr-east-04.cleardb.com', // O host do banco. Ex: localhost
     user: 'b9bd6fe9041bdd', // Um usuário do banco. Ex: user 
     password: 'ab25589f', // A senha do usuário. Ex: user123
-    database: 'heroku_97274e6da3038a4', // A base de dados a qual a aplicação irá se conectar, deve ser a mesma onde foi executado o Código 1. Ex: node_mysql
+    database: 'heroku_97274e6da3038a4' // A base de dados a qual a aplicação irá se conectar, deve ser a mesma onde foi executado o Código 1. Ex: node_mysql
 });
 
+const pool = mysql.createPool({
+    host: 'us-cdbr-east-04.cleardb.com', // O host do banco. Ex: localhost
+    user: 'b9bd6fe9041bdd', // Um usuário do banco. Ex: user 
+    password: 'ab25589f', // A senha do usuário. Ex: user123
+    database: 'heroku_97274e6da3038a4'
+  });
 // con.connect((err) => {
 //     if (err) {
 //         console.log('Erro connecting to database...', err)
